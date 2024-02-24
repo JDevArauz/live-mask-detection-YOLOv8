@@ -20,7 +20,7 @@ while True:
 
     # DIBUJANDO EL CUADRO DELIMITADOR Y ETIQUETANDO LOS OBJETOS DETECTADOS
     for r in results:
-        marcos = r.marcos
+        marcos = r.boxes
         for marco in marcos:
             # COORDENADAS DEL BOUNDING BOX 
             x1, y1, x2, y2 = marco.xyxy[0]
